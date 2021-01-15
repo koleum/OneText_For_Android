@@ -22,11 +22,12 @@ android {
     }
     signingConfigs {
         releaseSigningConfig {
-            storeFile rootProject.file("app/lz233_key.jks")
+            storeFile rootProject.file("app/appcenter.keystore")
+            // storeFile rootProject.file("app/lz233_key.jks")
             //storePassword System.getProperty("KEYSTORE_PASSWORD")
-            storePassword System.getenv("KEYSTORE_PASSWORD")
-            keyAlias System.getenv("KEY_ALIAS")
-            keyPassword System.getenv("KEY_PASSWORD")
+            storePassword System.getenv("IVAN")
+            keyAlias System.getenv("IVAN")
+            keyPassword System.getenv("IVAN")
         }
     }
     buildTypes {
