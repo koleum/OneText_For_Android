@@ -34,19 +34,19 @@ android {
         release {
             minifyEnabled true
             zipAlignEnabled true
-            signingConfig signingConfigs.releaseSigningConfig
+            // signingConfig signingConfigs.releaseSigningConfig
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         coolapk {
             minifyEnabled true
             zipAlignEnabled true
-            signingConfig signingConfigs.releaseSigningConfig
+            // signingConfig signingConfigs.releaseSigningConfig
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         GooglePlay {
             minifyEnabled true
             zipAlignEnabled true
-            signingConfig signingConfigs.releaseSigningConfig
+            // signingConfig signingConfigs.releaseSigningConfig
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
