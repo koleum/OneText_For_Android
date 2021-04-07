@@ -20,21 +20,19 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         //multiDexEnabled true
     }
-    // signingConfigs {
-    //     releaseSigningConfig {
-    //         // storeFile rootProject.file("app/appcenter.keystore")
-    //         // // storeFile rootProject.file("app/lz233_key.jks")
-    //         // //storePassword System.getProperty("KEYSTORE_PASSWORD")
-    //         // storePassword System.getenv("IVAN")
-    //         // keyAlias System.getenv("IVAN")
-    //         // keyPassword System.getenv("IVAN")
-    //     }
-    // }
+    signingConfigs {
+        releaseSigningConfig {
+            storeFile System.getProperty("APPCENTER_KEYSTORE_FILE_ID")
+            storePassword System.getProperty("APPCENTER_KEYSTORE_PASSWORD")
+            keyAlias System.getProperty("APPCENTER_KEY_ALIAS")
+            keyPassword System.getProperty("APPCENTER_KEY_PASSWORD")
+        }
+    }
     buildTypes {
         release {
             minifyEnabled true
             zipAlignEnabled true
-            // signingConfig signingConfigs.releaseSigningConfig
+            signingConfig signingConfigs.releaseSigningConfig
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         coolapk {
