@@ -20,3 +20,4 @@ The home page of this app: [Click me](https://github.com/lz233/OneText_For_Andro
 Homepage of the core library: [Click me](https://github.com/lz233/OneText-Library)
 
 Telegram group of this project: [Click me](https://t.me/OneTextProject)
+asd
